@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Taketo Kawauchi Personal site'>
+  <meta property='og:url' content='URL入る'>
+  <meta property='og:description' content='Taketo Kawauchi Personal site'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Taketo Kawauchi Personal site" />
+  <title>Taketo Kawauchi Personal site</title>
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+<!-- minify -->
+<link href="https://unpkg.com/nes.css@0.0.2/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous">
+  </script>
+
+<body>
+
+<div class="h">
+  <h1>Taketo Kawauchi Personal site</h1>
+    <section class="icon-list"></section>
+      <!-- iconList -->
+    
+      <i class="nes-icon twitter is-large"></i>
+      <i class="nes-icon facebook is-large"></i>
+      <i class="nes-icon instagram is-large"></i>
+      <i class="nes-icon github is-large"></i>
+      <i class="nes-icon gmail is-large"></i>
+      <i class="nes-icon youtube is-large"></i>
+      <i class="nes-octocat animate"></i>
+    </section>
+      <p>Come for the nostalgia, stay for the vertigo-inducing jiggle effect. Can be used in a more artistic / less queasy way without the animation. Works best on large blocky text.</p>
+</div>
+
+<a class="nes-btn" href="#">Profile</a>
+
+<button type="button" class="nes-btn is-primary">Works</button>
+<button type="button" class="nes-btn is-success">God History</button>
+<button type="button" class="nes-btn is-warning">Contact</button>
+<!--<button type="button" class="nes-btn is-error">Error</button>-->
+<button type="button" class="nes-btn is-disabled">Don't look</button>
+
+<label class="nes-btn">
+  <span>Select your file</span>
+  <input type="file">
+</label>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"><title>デモ</title>
+  <!--   jQuery・bootstrapライブラリ読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!--  nes -->
+  <link href="https://blog.appsol-one.com/custom/00-page/top/nes.min.css" rel="stylesheet" />
+  <script src="https://blog.appsol-one.com/custom/00-page/top/typed.js"></script>
+  <!--  nes -->
+
+</head>
+<body>
+
+<div class="w-100 flex justify-center items-center p-2 h-full" >
+  <div class="nes-container w-full is-dark is-rounded text-center" 
+      style="border-image-repeat: stretch; width: 100% !important; text-align: center; padding-left:5px !important; padding-right:5px !important;">
+	<span id="typed-sample" ></span>
+
+  </div>
+</div>
+
+<div class="w-100 flex justify-center items-center p-2 h-full" >
+  <div class="nes-container w-full is-dark is-rounded text-center" 
+	style="border-image-repeat: stretch; width: 100% !important; text-align: center; padding-left:5px !important; padding-right:5px !important;">
+
+  <p style="margin-top:25px; padding: 15px;">
+	なんと　かわうちたけと が　 なかまになりたそうに　こちらをみている！<br/>なかまに　してあげますか？
+  </p>
+  <div style="margin-top: 15px;"> 
+    <label>
+      <input type="radio" class="nes-radio is-dark" name="answer-sample" value="ok" checked />
+	<span>はい</span>
+    </label>
+    <label>
+	<input type="radio" class="nes-radio is-dark" name="answer-sample"  value="ng" />
+	<span>いいえ</span>
+    </label>
+  </div>
+	
+  <button type="button" class="nes-btn is-primary mt-3 " onclick="clickSampleDecide()">
+	けってい
+  </button>
+</div>
+
+
+  <div class="nes-dialog is-dark is-rounded" id="dialog-ok" style="display: none;">
+    <form method="dialog">
+	  <p>ありがとうございます！　がんばります！！！！！！！</p>
+    	<menu class="dialog-menu">
+	      <button type="button" class="nes-btn is-error" onclick="closeCheeringModal()">閉じる</button>
+	   </menu>
+    </form>
+  </div>
+
+<div class="nes-dialog is-dark is-rounded" id="dialog-ng" style="display: none;">
+	<form method="dialog">
+		<p>そんなこと　いわないで<br/>がんばりますので　なにとぞ　よろしく　おねがいします！</p>
+		<menu class="dialog-menu">
+		  <button type="button" class="nes-btn is-error" onclick="closeCheeringModal()">閉じる</button>
+	    </menu>
+   </form>
+</div>
+
+  </div>
+
+<div id="fullOverlay" style="display: none;"></div>
+	  
+<!-- ############ javascript  ############ -->
+<script type="text/javascript">
+$(function(){
+
+// 文章のアニメーションセット
+var typed = new Typed('#typed-sample', {
+	strings: [
+	'こんにちは  かわうちたけと ともうします。<br/>とうサイトを　ごらんいただき　ありがとうございます。ウェブエンジニアとしての　ちしきやけいけんを　はっしんしていきますので　ごゆっくり　ごらんください。',
+　　　　],	
+	typeSpeed: 70,
+	backSpeed: 0,
+	startDelay: 1000,
+	loop: true,
+	smartBackspace: true,
+});
+
+});
+
+// けっていボタン押下時
+function clickSampleDecide() {
+    if ($('input:radio[name="answer-sample"]:checked').val() == 'ok') {
+	$('#dialog-ok').fadeIn();
+	$('#fullOverlay').fadeIn();
+    }  else {
+	$('#dialog-ng').fadeIn();
+	$('#fullOverlay').fadeIn();
+    }
+  }
+
+// モーダルの閉じるボタン押下時
+function closeCheeringModal() {
+	$('#dialog-ok').fadeOut();
+	$('#dialog-ng').fadeOut();
+	$('#fullOverlay').fadeOut();
+}
+
+
+</script>
+<!-- ############ /javascript  ############ -->
+
+
+<!-- ############  style  ############ -->
+<style>
+
+.nes-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+#fullOverlay{
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(100, 100, 100, .8);
+  z-index: 100;
+}
+
+@media only screen and (max-width: 767px){
+.nes-dialog {
+	width: 100%;	
+	text-align: left;
+}
+}
+
+</style>
+<!-- ############  /style  ############ -->
+</body>
+</html>
